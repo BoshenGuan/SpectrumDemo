@@ -7,9 +7,4 @@ SDRSharp is a WinForm based application. To use its controls directly in a WPF a
 As for drawing system, `System.Drawing` namespace (GDI+ actually) keeps unchanged, which is originally used in SDRSharp. <br/>
 
 ## Usage
-All source files are under `Spectrum` folder. Copy it to project folder and add source files to the project tree in Visual Studio. The porting is implemented on Visual Studio 2013 and is retargeted to .Net Framework 4.5.1. <br/>
-
-## Limitation
-This porting currently does not support properties setting in XAML. This is because the `RenderSize` is evaluated only after first call to `OnRender` (before that the `RenderSize` is 0). The properties however are set in `InitializeComponent`, which is called before `OnRender`. <br/>
-
-Setting properties in Loaded event does work as a work-around. See example project for more details.
+All source files are under `Spectrum` folder. Copy it to project folder and add source files to the project tree in Visual Studio. The porting is implemented on Visual Studio 2013 and is retargeted to .Net Framework 4.5.1. See sample project for more details. <br/>

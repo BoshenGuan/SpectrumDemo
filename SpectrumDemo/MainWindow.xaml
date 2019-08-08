@@ -32,8 +32,46 @@
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
 
-            <local:SpectrumAnalyzer x:Name="spectrumAnalyzer" Grid.Row="0" />
-            <local:Waterfall x:Name="waterfall" Grid.Row="2" />
+            <local:SpectrumAnalyzer
+                x:Name="spectrumAnalyzer"
+                Grid.Row="0"
+                Attack="0.9"
+                BandType="Center"
+                CenterFrequency="0"
+                Decay="0.5"
+                DisplayOffset="0"
+                DisplayRange="130"
+                FilterBandwidth="10000"
+                FilterOffset="0"
+                Frequency="0"
+                MarkPeaks="False"
+                ShowMaxLine="False"
+                SpectrumWidth="48000"
+                StepSize="1000"
+                UseSmoothing="True"
+                UseSnap="True"
+                Zoom="0" />
+
+            <local:Waterfall
+                x:Name="waterfall"
+                Grid.Row="2"
+                Attack="0.9"
+                BandType="Center"
+                CenterFrequency="0"
+                Contrast="0"
+                Decay="0.5"
+                DisplayOffset="0"
+                DisplayRange="130"
+                FilterBandwidth="10000"
+                FilterOffset="0"
+                Frequency="0"
+                SpectrumWidth="48000"
+                StepSize="1000"
+                TimestampInterval="100"
+                UseSmoothing="True"
+                UseSnap="True"
+                UseTimestamps="False"
+                Zoom="0" />
         </Grid>
 
     </Grid>

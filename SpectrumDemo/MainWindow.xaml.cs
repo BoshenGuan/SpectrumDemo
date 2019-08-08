@@ -49,41 +49,6 @@ namespace SpectrumDemo
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            spectrumAnalyzer.BandType = BandType.Center;
-            spectrumAnalyzer.CenterFrequency = 0;
-            spectrumAnalyzer.Frequency = 0;
-            spectrumAnalyzer.FilterBandwidth = 10000;
-            spectrumAnalyzer.DisplayRange = 130;
-            spectrumAnalyzer.DisplayOffset = 0;
-            spectrumAnalyzer.FilterOffset = 0;
-            spectrumAnalyzer.SpectrumWidth = 48000;
-            spectrumAnalyzer.MarkPeaks = false;
-            spectrumAnalyzer.Zoom = 0;
-            spectrumAnalyzer.UseSmoothing = true;
-            spectrumAnalyzer.Decay = 0.5;
-            spectrumAnalyzer.Attack = 0.9;
-            spectrumAnalyzer.StepSize = 1000;
-            spectrumAnalyzer.UseSnap = true;
-            spectrumAnalyzer.ShowMaxLine = false;
-
-            waterfall.BandType = BandType.Center;
-            waterfall.CenterFrequency = 0;
-            waterfall.Frequency = 0;
-            waterfall.FilterBandwidth = 10000;
-            waterfall.DisplayRange = 130;
-            waterfall.DisplayOffset = 0;
-            waterfall.FilterOffset = 0;
-            waterfall.SpectrumWidth = 48000;
-            waterfall.Contrast = 0;
-            waterfall.Zoom = 0;
-            waterfall.UseSmoothing = true;
-            waterfall.Decay = 0.5;
-            waterfall.Attack = 0.9;
-            waterfall.StepSize = 1000;
-            waterfall.UseSnap = true;
-            waterfall.UseTimestamps = false;
-            waterfall.TimestampInterval = 100;
-
             performTimer = new DispatcherTimer();
             performTimer.Interval = new TimeSpan(0, 0, 0, 0, 30);
             performTimer.Tick += performTimer_Tick;

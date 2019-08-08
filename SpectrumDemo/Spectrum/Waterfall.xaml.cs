@@ -708,6 +708,8 @@ namespace Spectrum
                 _gradientBrush.InterpolationColors = _gradientColorBlend;
                 _writeableBitmap = new WriteableBitmap(ClientRectangle.Width, ClientRectangle.Height, _buffer.HorizontalResolution, _buffer.VerticalResolution, System.Windows.Media.PixelFormats.Bgr32, null);
                 _initialized = true;
+
+                ApplyZoom();
             }
             else
             {

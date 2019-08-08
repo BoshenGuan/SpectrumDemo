@@ -813,6 +813,10 @@ namespace Spectrum
                 _bkgBuffer.Dispose();
                 _gradientBrush.Dispose();
             }
+            else
+            {
+                ApplyZoom();
+            }
 
             _buffer = new Bitmap(ClientRectangle.Width, ClientRectangle.Height, PixelFormat.Format32bppPArgb);
 
